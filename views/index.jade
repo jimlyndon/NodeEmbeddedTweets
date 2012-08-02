@@ -1,0 +1,18 @@
+append head
+  script(src="/javascripts/App.js")
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/stylesheets/jquery-ui-1.8.18.custom.css')
+
+  script(src="/javascripts/jquery-ui-1.8.18.custom.min.js")
+
+body.radial-gradient
+  h1.shadow Embedded Tweet Demo
+  div.center
+    #
+    input(type="text", placeholder="Input a term to search")#search
+    button#add.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only
+      span.ui-button-text Search tweets
+  div#spinner
+    img(src='../images/ajax-loader.gif')
+  ul#tweets
+  #map
